@@ -1,0 +1,2 @@
+Dependencies for Project '1.0', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Pgms\MAX_EL.asm)(0x5C8FD2D0)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "E:\Keil\ARM\INC" -I "E:\Keil\ARM\INC\Philips" --list ".\MAX_EL.lst" --xref -o "MAX_EL.o")

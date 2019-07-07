@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\ARM_Dev\1.0.uvproj
+Project File Date:  03/18/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling MAX_EL.asm...
+Pgms\MAX_EL.asm(19): warning: A1313W: Missing END directive at end of file
+linking...
+Program Size: Code=64 RO-data=0 RW-data=0 ZI-data=0  
+"1.0.axf" - 0 Error(s), 1 Warning(s).
+compiling E:\Keil\ARM\INC\Philips\LPC214X.H...
+Build target 'Target 1'
+assembling MAX_EL.asm...
+Pgms\MAX_EL.asm(19): warning: A1313W: Missing END directive at end of file
+linking...
+Program Size: Code=64 RO-data=0 RW-data=0 ZI-data=0  
+"1.0.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling MAX_EL.asm...
+Pgms\MAX_EL.asm(22): warning: A1447W: Missing END directive at end of file, but found a label named END
+linking...
+Program Size: Code=68 RO-data=0 RW-data=0 ZI-data=0  
+"1.0.axf" - 0 Error(s), 1 Warning(s).
+Clean started: Project: '1.0'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling MAX_EL.asm...
+Pgms\MAX_EL.asm(21): warning: A1447W: Missing END directive at end of file, but found a label named END
+linking...
+Program Size: Code=64 RO-data=0 RW-data=0 ZI-data=0  
+"1.0.axf" - 0 Error(s), 1 Warning(s).
