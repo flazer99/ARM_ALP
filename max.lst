@@ -1,0 +1,74 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             PROGRAM,CODE,READONLY
+    2 00000000         
+    3 00000000         
+    4 00000000                 ENTRY
+    5 00000000 E28F0024        ADR              R0,Array
+    6 00000004 E5901000        LDR              R1,[R0]
+    7 00000008 E5902000        LDR              R2,[R0]
+    8 0000000C E3A03003        MOV              R3,#0X03
+    9 00000010         
+   10 00000010 E5B04004 
+                       LOOP    LDR              R4,[R0,#4]!
+   11 00000014 E1540001        CMP              R4,R1
+   12 00000018 BA000000        BLT              LESS
+   13 0000001C C1A01004        MOVGT            R1,R4
+   14 00000020 E2433001 
+                       LESS    SUB              R3,R3,#0X01
+   15 00000024 E3530000        CMP              R3,#0X0
+   16 00000028 1AFFFFF8        BNE              LOOP
+   17 0000002C         
+   18 0000002C         
+   19 0000002C 00000001 
+              00000004 
+              00000003 
+              00000002 Array   DCD              1,4,3,2
+   20 0000003C         
+   21 0000003C                 END
+Command Line: --debug --xref --apcs=interwork -omax.o -ID:\Keil\ARM\INC -ID:\Ke
+il\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=.\max.lst Pgms\max.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Array 0000002C
+
+Symbol: Array
+   Definitions
+      At line 19 in file Pgms\max.asm
+   Uses
+      At line 5 in file Pgms\max.asm
+Comment: Array used once
+LESS 00000020
+
+Symbol: LESS
+   Definitions
+      At line 14 in file Pgms\max.asm
+   Uses
+      At line 12 in file Pgms\max.asm
+Comment: LESS used once
+LOOP 00000010
+
+Symbol: LOOP
+   Definitions
+      At line 10 in file Pgms\max.asm
+   Uses
+      At line 16 in file Pgms\max.asm
+Comment: LOOP used once
+PROGRAM 00000000
+
+Symbol: PROGRAM
+   Definitions
+      At line 1 in file Pgms\max.asm
+   Uses
+      None
+Comment: PROGRAM unused
+4 symbols
+324 symbols in table
